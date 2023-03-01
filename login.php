@@ -19,6 +19,7 @@ if (isset($_SESSION["user"])) {
 </head>
 <body>
     <?php
+    // select from the dB and validate it
     if (isset($_POST["login"])) {
         $email = $_POST["email"];
         $password =$_POST["password"];
@@ -32,7 +33,8 @@ if (isset($_SESSION["user"])) {
                 $_SESSION["user"]="yes";
                 header("Location: index.php");
 
-            }else{
+            }
+            else{
                 echo"<div class='alert alert-danger'> pswrd does not match</div>";
             }
 

@@ -1,7 +1,9 @@
+<!-- connecting to data base -->
+
 <?php
 $hostName="localhost";
 $dbuser="root";
-$dppassword=
+$dppassword="";
 $dbName="log_form";
 mysqli_connect($hostName,$dbuser,$dppassword,$dbName);
 if (!$conn) {

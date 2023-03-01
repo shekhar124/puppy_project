@@ -18,6 +18,7 @@ if (isset($_SESSION["user"])) {
 <body>
     <div class="container">
         <?php
+        //to submit the data to the data base by post method and if we submit blank data it will show an message like enter valid name , email etc..
         if(isset($_POST["submit"])){
         $fullName=$_POST["fullname"];
         $email=$_POST["email"];
